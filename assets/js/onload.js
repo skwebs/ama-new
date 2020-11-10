@@ -1,3 +1,4 @@
+"use strict";
 window.addEventListener('DOMContentLoaded', (event) => {
     //console.log('DOM fully loaded and parsed');
 	document.querySelector("body").style.visibility = "visible";
@@ -17,10 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 $(document).ready(()=>{
-	/*function p(e){return e.toString().padStart(2,'0');}
-	function p(e) {
-	return e.toString().padStart(2, "0");
-	}
+	function p(e){return e.toString().padStart(2,'0');}
 	setInterval(() => {
 	var d = new Date(),
 	h = d.getHours(),
@@ -31,35 +29,20 @@ $(document).ready(()=>{
 //	", " +
 	p(d.getDate()) +
 	"-" +
-	[
-	"Jan",
-	"Feb",
-	"Mar",
-	"Apr",
-	"May",
-	"Jun",
-	"Jul",
-	"Aug",
-	"Sep",
-	"Oct",
-	"Nov",
-	"Dec"
-	][d.getMonth()] +
+	["Jan","Feb","Mar","Apr","May",
+	"Jun","Jul","Aug","Sep","Oct",
+	"Nov","Dec"][d.getMonth()] +
 	"-" +
 	d.getFullYear() +
-	" [" +
-	p(h) +
-	":" +
+	" [" + p(h) + ":" +
 	p(d.getMinutes()) +
-//	":" +
-//	p(d.getSeconds()) +
-	" " +
-	m +
-	" IST]");
+	":" +
+	p(d.getSeconds()) +
+	" " + m + " IST]");
 	}, 1e3);
 	//setInterval(()=>document.querySelector(".header__time").innerHTML = new Date().toLocaleString('en-IN', { dateStyle : 'medium',timeStyle : 'medium',hour12: true }),1e3);
 	
-	*/
+	
 	//show preloader until page loading
 //	$('.preloader').fadeOut(600, function(){ 
 	//	$('.preloader').remove();

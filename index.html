@@ -92,6 +92,7 @@
 	<link rel="stylesheet" href="./assets/css/layout/stk-ftr-in-btm.css?v0" />
 	<link rel="stylesheet" href="./assets/css/layout/nav.css?v0">
 	<link rel="stylesheet" href="./assets/css/layout/sidebar.css?v0">
+	<link rel="stylesheet" href="./assets/css/layout/footer.css?v0">
 	<!-- form -->
 	<link rel="stylesheet" href="./assets/css/form/bs5a2-floating-label.css?v0" />
 	<link rel="stylesheet" href="./assets/css/form/animated-msform.css?v0">
@@ -100,7 +101,6 @@
 	<link rel="stylesheet" href="./assets/css/slideMenu.css?v">
 	<link rel="stylesheet" href="./assets/css/slider-1.css">
 	<link rel="stylesheet" href="./assets/css/dirMsg.css">
-	<link rel="stylesheet" href="./assets/css/footerContact.css">
 	<style type="text/css">
 	html,
 	body {
@@ -109,7 +109,7 @@
 	}
 	a{text-decoration:none;}
 	.cta {
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 50%), url("https://anshumemorial.in/test/m/assets/img/web/laptop1.jpg") fixed center 100%/cover
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 50%), url("./assets/img/web/laptop1.jpg") fixed center 100%/cover;
 	}
 	
 	@media (max-width:760px) {
@@ -117,10 +117,10 @@
 			font-size: 1.1rem !important;
 		}
 	}
-	
 	.contact-hdr {
 		font-size: .875rem;
 	}
+	
 	</style>
 </head>
 
@@ -266,16 +266,19 @@
 				</div>
 			</div>
 		</section>
+		
 		<section class="">
+
 			<div class="py-4 px-2 bg-light">
 				<div class="container border border-primar rounded">
 					<p class="h4 pt-2 text-primary">Find us on map</p>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.6503934157327!2d85.35990715211484!3d25.74907256391992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed65dea0882835%3A0xf138a62b245e3bcb!2sAnshu+Memorial+Academy!5e0!3m2!1sen!2sin!4v1539857272951" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div class="py-5 bg-white cta">
+
+			<div class="py-5">
 				<div class="container">
-					<div class="card">
+					<div class="card mx-auto">
 						<div class="card-body">
 							<h1 class="text-center pb-4 pt-3 text-primary">Get in touch!</h1>
 							<form id="contact-form" class=" form-float form-float-box" method="post">
@@ -308,18 +311,45 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
 	</main>
-	<footer class="bg-light text-muted">
-		<!-- copyright section -->
-		<section class="copyright my-auto py-4 text-center "> &copy;
-			<script>
-			document.write(new Date().getFullYear())
-			</script> <a href="./" class="mr-md-5" >Anshu Memorial Academy</a>
-			<hr class="d-md-none" >
-			Designed &amp; Developed by <a href="https://skwebs.github.io">SKWebs</a> </section>
-		<!-- // copyright section -->
-	</footer>
+
+		<footer class="bg-dark footer text-muted">
+			<!-- footer social icons section -->
+			<section class="footer__social py-1 bg-primary">
+				<div class="footer__social_icon container d-flex justify-content-center align-items-center">
+					<ul class="d-none d-md-flex text-white">
+						<li>Follow us on :</li>
+					</ul>
+					<ul>
+						<li class="fb flat-icon wow animate__fadeInLeftBig" data-wow-delay=".3s"><a href="https://fb.com/skwebsofficial/"><i class="fa fa-facebook"></i></a></li>
+						<li class="tw flat-icon wow animate__fadeInLeftBig" data-wow-delay="0"><a href="https://twitter.com/SatishKmrSharma/"><i class="fa fa-twitter"></i></a></li>
+						<li class="ig flat-icon wow animate__fadeInRightBig" data-wow-delay="0"><a href="https://instagram.com/satishkmrsharma/"><i class="fa fa-instagram"></i></a></li>
+						<li class="yt flat-icon wow animate__fadeInRightBig" data-wow-delay="0.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="footer-links" >
+				<div class="p-3" >&nbsp;
+				<a href="#" >Student Panel</a> | 
+				<a href="#" >Teacher Panel</a> | 
+				<a href="#" >Admin Panel</a> |
+				<a href="#" >Privacy-Policy</a> | 
+				<a href="#" >Disclaimer</a> |
+				<a href="#" >Terms & Conditions</a>
+				</div>
+			</section>
+			<!-- // footer social icons section -->
+			<!-- copyright section -->
+			<section class="copyright my-auto py-2 py-md-3  text-center"> &copy;
+				<script>
+				document.write(new Date().getFullYear())
+				</script> <a class="text-lightgrey" href="./"><strong>Anshu Memorial Academy</strong>. </a><span class="d-none d-md-inline mr-5"> All Right Reserved. </span>
+				<hr style="max-width:300px;" class="bg-muted my-1 w-50 mx-auto d-md-none"> <span class="d-block d-md-inline"> Designed &amp; Developed by <a href="https://skwebs.github.io">SKWebs</a></span> </section>
+			<!-- // copyright section -->
+		</footer>
+			<!-- // footer social icons section -->
 	<!-- extra -->
 	<div class="preloader"> <img class="preloader__img" src="./assets/img/ama/ama-old-128x128.png" alt="Children Future Coaching Logo">
 		<div class="rounder"></div>

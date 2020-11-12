@@ -12,7 +12,7 @@
 	delay:        300
 	}
 )
-wow.init();*
+wow.init();*/
 // waves initialization
 //button
 Waves.init();
